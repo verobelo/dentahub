@@ -1,0 +1,195 @@
+@import "tailwindcss";
+
+@theme {
+  --color-green-primary: #24ae7c;
+  --color-green-600: #0d2a1f;
+
+  --color-blue-500: #79b5ec;
+  --color-blue-600: #152432;
+
+  --color-red-500: #f37877;
+  --color-red-600: #3e1716;
+  --color-red-700: #f24e43;
+
+  --color-light-200: #e8e9f9;
+
+  --color-dark-200: #0d0f10;
+  --color-dark-300: #131619;
+  --color-dark-400: #1a1d21;
+  --color-dark-500: #363a3d;
+  --color-dark-600: #76828d;
+  --color-dark-700: #abb8c4;
+
+  --animate-accordion-down: accordion-down 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --animate-accordion-up: accordion-up 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@layer base {
+  .remove-scrollbar::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    border-radius: 0px;
+
+  }
+
+  .remove-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .remove-scrollbar::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 0px;
+  }
+
+  .remove-scrollbar::-webkit-scrollbar-thumb:hover {
+    /* background: #1e2238; */
+    background: transparent;
+  }
+}
+
+
+.container {
+  @apply relative flex-1 overflow-y-auto px-[5%];
+}
+
+.sub-container {
+  @apply mx-auto flex size-full flex-col;
+}
+
+.side-img {
+  @apply hidden h-full object-cover md:block;
+}
+
+.shad-input {
+  @apply bg-dark-400 placeholder:text-dark-600 border-dark-500 h-11 focus-visible:ring-0 focus-visible:ring-offset-0;
+}
+
+.PhoneInputCountrySelect {
+  @apply bg-dark-400;
+}
+
+.PhoneInputCountryIcon {
+  @apply ml-2;
+}
+
+.PhoneInputInput:focus-visible {
+  outline: none;
+}
+
+.radio-group {
+  @apply flex h-full flex-1 items-center gap-2 rounded-md border border-dashed border-dark-500 bg-dark-400 p-3;
+}
+
+.react-datepicker__month-container,
+.react-datepicker__time-list {
+  background-color: #1a1d21;
+}
+
+.react-datepicker__header {
+  background-color: #1a1d21 !important;
+}
+
+.react-datepicker-time__header,
+.react-datepicker__time-list-item {
+  color: #abb8c4 !important;
+}
+
+.react-datepicker__current-month {
+  color: #abb8c4 !important;
+}
+
+.react-datepicker__day,
+.react-datepicker__day-name {
+  color: #abb8c4 !important;
+}
+
+.react-datepicker__day--keyboard-selected {
+  background-color: #216ba5 !important;
+}
+
+.react-datepicker__day-name,
+.react-datepicker__day {
+  @apply text-dark-700;
+}
+
+.react-datepicker__day:hover {
+  background-color: #e8e9f9 !important;
+  color: #131619 !important;
+}
+
+.react-datepicker__time-list-item:hover {
+  background-color: #e8e9f9 !important;
+  color: #131619 !important;
+}
+
+.react-datepicker__input-container:focus-visible {
+  outline: none !important;
+}
+
+.react-datepicker-wrapper {
+  margin: auto !important;
+}
+
+.react-datepicker-ignore-onclickoutside {
+  outline: none !important;
+}
+
+.react-datepicker__time-list-item--disabled {
+  background-color: #abb8c4;
+  color: #e8e9f9 !important;
+  text-decoration: line-through;
+
+}
+
+.react-datepicker__time-list-item--disabled:hover {
+  background-color: #abb8c4 !important;
+  color: #e8e9f9 !important;
+}
+
+.react-datepicker__day--disabled {
+  text-decoration: line-through;
+
+}
+
+.react-datepicker__day--disabled:hover {
+  background-color: #1a1d21 !important;
+  color: #abb8c4 !important;
+}
+
+.file-upload {
+  @apply text-xs leading-[16px] font-normal flex cursor-pointer flex-col items-center justify-center gap-3 rounded-md border border-dashed border-dark-500 bg-dark-400 p-5;
+}
+
+.bg-appointments {
+  background-image: url("/appointments-bg.png");
+}
+
+.bg-pending {
+  background-image: url("/pending-bg.png");
+}
+
+.bg-cancelled {
+  background-image: url("/cancelled-bg.png");
+}
+
+@keyframes accordion-down {
+  from {
+    height: 0;
+  }
+
+  to {
+    height: var(--radix-accordion-content-height);
+
+  }
+}
+
+@keyframes accordion-up {
+  from {
+    height: var(--radix-accordion-content-height);
+
+  }
+
+  to {
+    height: 0;
+  }
+}
