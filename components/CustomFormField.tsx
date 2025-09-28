@@ -11,7 +11,7 @@ import { Input } from '@/components/ui/input';
 import Image from 'next/image';
 import React, { useState } from 'react';
 import DatePicker from 'react-datepicker';
-import { Control } from 'react-hook-form';
+import { Control, FieldValues, useController } from 'react-hook-form';
 import PhoneInput from 'react-phone-number-input';
 import 'react-phone-number-input/style.css';
 import { FormFieldType } from './forms/PatientForm';
@@ -22,9 +22,10 @@ import { Button } from './ui/button';
 import { Checkbox } from './ui/checkbox';
 import { Select, SelectContent, SelectTrigger, SelectValue } from './ui/select';
 import { Textarea } from './ui/textarea';
+import { Appointment } from '@/types/appwrite.types';
 
 interface CustomProps {
-  control: Control<any>;
+  control: Control<FieldValues>;
   fieldType: FormFieldType;
   name: string;
   label?: string;
@@ -35,14 +36,22 @@ interface CustomProps {
   dateFormat?: string;
   showTimeSelect?: boolean;
   children?: React.ReactNode;
-  renderSkeleton?: (field: any) => React.ReactNode;
+  renderSkeleton?: (
+    field: ReturnType<typeof useController>['field']
+  ) => React.ReactNode;
   required?: boolean;
   type?: 'text' | 'password' | 'email' | 'date';
-  allAppointments?: any[];
+  allAppointments?: Appointment[];
   selectedDoctor?: string;
 }
 
-function RenderField({ field, props }: { field: any; props: CustomProps }) {
+function RenderField({
+  field,
+  props,
+}: {
+  field: ReturnType<typeof useController>['field'];
+  props: CustomProps;
+}) {
   const [showPassword, setShowPassword] = useState(false);
   const {
     fieldType,
@@ -116,7 +125,7 @@ function RenderField({ field, props }: { field: any; props: CustomProps }) {
       const isTimeSlotTaken = (time: Date): boolean => {
         if (!props.selectedDoctor || !props.allAppointments) return false;
 
-        return props.allAppointments.some((appointment: any) => {
+        return props.allAppointments.some((appointment) => {
           const appointmentTime = new Date(appointment.schedule);
           const isSameDoctor =
             appointment.primaryDoctor === props.selectedDoctor;
@@ -143,7 +152,7 @@ function RenderField({ field, props }: { field: any; props: CustomProps }) {
               timeFormat='HH:mm'
               showTimeSelect={showTimeSelect ?? false}
               timeInputLabel='Time:'
-              ariaRequired={props.required}
+              ariaRequired={props.required ? 'true' : undefined}
               minDate={new Date()}
               filterTime={(time) => {
                 const hours = time.getHours();
