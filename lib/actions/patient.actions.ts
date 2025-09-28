@@ -13,6 +13,7 @@ import {
   users,
 } from '../appwrite.config';
 import { parseStringify } from '../utils';
+import { Patient } from '@/types/appwrite.types';
 
 export const getUser = async (userId: string) => {
   const user = await users.get({ userId: userId });
@@ -70,7 +71,10 @@ export async function getPatient(userId: string) {
   return parseStringify(patients.documents[0]);
 }
 
-export async function updatePatient(patientId: string, updateData: any) {
+export async function updatePatient(
+  patientId: string,
+  updateData: Partial<Patient>
+) {
   const updatedPatient = await databases.updateDocument({
     databaseId: DATABASE_ID!,
     collectionId: PATIENT_TABLE_ID!,
