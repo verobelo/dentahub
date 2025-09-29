@@ -59,7 +59,7 @@ export default function PatientForm() {
     }
   }
 
-  async function handleDemo(e) {
+  async function handleDemo(e: React.MouseEvent<HTMLButtonElement>) {
     e.preventDefault();
     const demoUser = await loginUser('demo@example.com', '1234.Default');
     if (demoUser) {
