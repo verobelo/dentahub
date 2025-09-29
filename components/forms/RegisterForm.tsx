@@ -27,7 +27,7 @@ export default function RegisterForm({ user }: { user: User }) {
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(false);
 
-  const form = useForm<z.infer<typeof PatientFormValidation>>({
+  const form = useForm({
     resolver: zodResolver(PatientFormValidation),
     defaultValues: {
       ...PatientFormDefaultValues,
@@ -139,7 +139,7 @@ export default function RegisterForm({ user }: { user: User }) {
                 <RadioGroup
                   className='flex h-11 gap-2 xl:justify-between'
                   onChange={field.onChange}
-                  defaultValue={field.value}>
+                  defaultValue={field.value as string}>
                   {GenderOptions.map((option) => (
                     <div key={option} className='radio-group'>
                       <RadioGroupItem value={option} id={option} />
@@ -302,7 +302,10 @@ export default function RegisterForm({ user }: { user: User }) {
           label='Scanned copy of identification document'
           renderSkeleton={(field) => (
             <FormControl>
-              <FileUploader files={field.value} onChange={field.onChange} />
+              <FileUploader
+                files={(field.value as File[] | undefined) || []}
+                onChange={field.onChange}
+              />
             </FormControl>
           )}
         />
