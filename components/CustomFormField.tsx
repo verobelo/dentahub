@@ -100,6 +100,7 @@ function RenderField<T extends FieldValues>({
           {type === 'password' && (
             <Button
               type='button'
+              aria-label={showPassword ? 'Hide password' : 'Show password'}
               className='mt-1'
               onClick={() => setShowPassword(!showPassword)}>
               {showPassword ? <EyeClosed /> : <Eye />}
