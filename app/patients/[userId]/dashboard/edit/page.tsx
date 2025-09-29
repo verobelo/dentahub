@@ -35,7 +35,7 @@ export default function EditPatientForm() {
   const [userId, setUserId] = useState('');
   const router = useRouter();
 
-  const form = useForm<z.infer<typeof PatientFormValidation>>({
+  const form = useForm({
     resolver: zodResolver(PatientFormValidation),
     defaultValues: {
       ...PatientFormDefaultValues,
@@ -61,7 +61,7 @@ export default function EditPatientForm() {
         username: patient?.username,
         email: patient?.email,
         phone: patient?.phone,
-        birthDate: patient?.birthDate,
+        birthDate: new Date(patient?.birthDate),
         gender: patient?.gender,
         address: patient?.address || '',
         occupation: patient?.occupation || '',
@@ -87,7 +87,7 @@ export default function EditPatientForm() {
   async function onSubmit(values: z.infer<typeof PatientFormValidation>) {
     setIsLoading(true);
     try {
-      const updateData = { ...values };
+      const updateData: Partial<Patient> = { ...values };
       delete updateData.identificationDocument;
 
       if (
@@ -184,7 +184,7 @@ export default function EditPatientForm() {
                   <RadioGroup
                     className='flex h-11 gap-2 xl:justify-between'
                     onChange={field.onChange}
-                    defaultValue={field.value}>
+                    defaultValue={field.value as string}>
                     {GenderOptions.map((option) => (
                       <div key={option} className='radio-group'>
                         <RadioGroupItem value={option} id={option} />
@@ -371,7 +371,7 @@ export default function EditPatientForm() {
                   </p>
                   <FormControl>
                     <FileUploader
-                      files={field.value}
+                      files={(field.value as File[] | undefined) || []}
                       onChange={field.onChange}
                     />
                   </FormControl>
