@@ -95,7 +95,7 @@ export default function Dashboard() {
             <AccordionTrigger>View Personal Information</AccordionTrigger>
             <AccordionContent>
               <div className='my-10 max-h-[50vh] overflow-y-scroll'>
-                <PersonalInformation userId={user.$id!} />
+                <PersonalInformation userId={user?.$id} />
               </div>
               <div className='flex items-center justify-center'>
                 <Button
