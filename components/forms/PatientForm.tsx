@@ -85,7 +85,7 @@ export default function PatientForm() {
           label='Full name *'
           placeholder='John Doe'
           iconSrc='/user.svg'
-          iconAlt='user'
+          iconAlt='user icon'
           required={true}
         />
         <CustomFormField
