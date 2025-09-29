@@ -156,7 +156,8 @@ export default function PersonalInformation({
         <TableRow>
           <TableCell className='bg-dark-500'>Identification document</TableCell>
           <TableCell>
-            {patient?.identificationDocumentId ? (
+            {patient?.identificationDocumentId &&
+            patient?.identificationDocumentUrl ? (
               <img
                 src={patient.identificationDocumentUrl}
                 alt='Identification Document'
