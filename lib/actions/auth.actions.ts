@@ -25,6 +25,10 @@ export async function loginUser(email: string, password: string) {
 }
 
 export async function getCurrentUser() {
-  const user = await account.get();
-  return user;
+  try {
+    const user = await account.get();
+    return user;
+  } catch (error) {
+    return null;
+  }
 }
