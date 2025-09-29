@@ -17,7 +17,7 @@ export default async function Success({
 
   const appointment = await getAppointment(appointmentId);
   const doctor = Doctors.find(
-    (doctor) => doctor.name === appointment.primaryDoctor
+    (doctor) => doctor.name === appointment?.primaryDoctor
   );
 
   return (
@@ -55,7 +55,7 @@ export default async function Success({
           </div>
           <div className='flex gap-2'>
             <Image src='/calendar.svg' width={24} height={24} alt='calendar' />
-            <p>{formatDateTime(appointment.schedule).dateTime}</p>
+            <p>{formatDateTime(appointment?.schedule).dateTime}</p>
           </div>
         </section>
         <Button
