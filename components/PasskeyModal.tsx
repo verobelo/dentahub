@@ -33,7 +33,7 @@ export default function PasskeyModal() {
   useEffect(() => {
     const accessKey = encryptedKey && decryptKey(encryptedKey);
     if (path) {
-      if (accessKey === process.env.NEXT_PUBLIC_ADMIN_PASSKEY) {
+      if (accessKey === process.env.ADMIN_PASSKEY) {
         setIsOpen(false);
         router.push('/admin');
       } else {
@@ -48,7 +48,7 @@ export default function PasskeyModal() {
   }
   function validatePassKey(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) {
     e.preventDefault();
-    if (passKey === process.env.NEXT_PUBLIC_ADMIN_PASSKEY) {
+    if (passKey === process.env.ADMIN_PASSKEY) {
       const encryptedKey = encryptKey(passKey);
       localStorage.setItem('accessKey', encryptedKey);
       setIsOpen(false);
