@@ -1,5 +1,19 @@
 'use client';
 
+import Image from 'next/image';
+import React, { useState } from 'react';
+import DatePicker from 'react-datepicker';
+import {
+  Control,
+  ControllerRenderProps,
+  FieldValues,
+  Path,
+} from 'react-hook-form';
+import PhoneInput from 'react-phone-number-input';
+import 'react-phone-number-input/style.css';
+import { Eye, EyeClosed } from 'lucide-react';
+import 'react-datepicker/dist/react-datepicker.css';
+
 import {
   FormControl,
   FormField,
@@ -8,26 +22,17 @@ import {
   FormMessage,
 } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
-import Image from 'next/image';
-import React, { useState } from 'react';
-import DatePicker from 'react-datepicker';
-import { Control, FieldValues, useController } from 'react-hook-form';
-import PhoneInput from 'react-phone-number-input';
-import 'react-phone-number-input/style.css';
 import { FormFieldType } from './forms/PatientForm';
-
-import { Eye, EyeClosed } from 'lucide-react';
-import 'react-datepicker/dist/react-datepicker.css';
+import { Appointment } from '@/types/appwrite.types';
 import { Button } from './ui/button';
 import { Checkbox } from './ui/checkbox';
 import { Select, SelectContent, SelectTrigger, SelectValue } from './ui/select';
 import { Textarea } from './ui/textarea';
-import { Appointment } from '@/types/appwrite.types';
 
-interface CustomProps {
-  control: Control<FieldValues>;
+interface CustomProps<T extends FieldValues = FieldValues> {
+  control: Control<T>;
   fieldType: FormFieldType;
-  name: string;
+  name: Path<T>;
   label?: string;
   placeholder?: string;
   iconSrc?: string;
@@ -37,7 +42,7 @@ interface CustomProps {
   showTimeSelect?: boolean;
   children?: React.ReactNode;
   renderSkeleton?: (
-    field: ReturnType<typeof useController>['field']
+    field: ControllerRenderProps<T, Path<T>>
   ) => React.ReactNode;
   required?: boolean;
   type?: 'text' | 'password' | 'email' | 'date';
@@ -45,12 +50,12 @@ interface CustomProps {
   selectedDoctor?: string;
 }
 
-function RenderField({
+function RenderField<T extends FieldValues>({
   field,
   props,
 }: {
-  field: ReturnType<typeof useController>['field'];
-  props: CustomProps;
+  field: ControllerRenderProps<T>;
+  props: CustomProps<T>;
 }) {
   const [showPassword, setShowPassword] = useState(false);
   const {
@@ -221,7 +226,9 @@ function RenderField({
   }
 }
 
-export default function CustomFormField(props: CustomProps) {
+export default function CustomFormField<T extends FieldValues = FieldValues>(
+  props: CustomProps<T>
+) {
   const { control, fieldType, name, label } = props;
   return (
     <FormField
