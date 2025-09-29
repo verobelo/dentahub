@@ -52,7 +52,7 @@ export default function AppointmentForm({
     loadAppointments();
   }, []);
 
-  const form = useForm<z.infer<typeof AppointmentFormValidation>>({
+  const form = useForm({
     resolver: zodResolver(AppointmentFormValidation),
     defaultValues: {
       primaryDoctor: appointment ? appointment.primaryDoctor : '',
@@ -117,7 +117,7 @@ export default function AppointmentForm({
 
         if (updatedAppointment) {
           form.reset();
-          setIsOpen(false);
+          setIsOpen?.(false);
         }
       }
     } catch (error) {
