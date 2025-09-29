@@ -20,7 +20,7 @@ export interface Patient extends Models.Document {
   importantIllnesses: string | undefined;
   identificationType: string | undefined;
   identificationNumber: string | undefined;
-  identificationDocument: FormData | undefined;
+  identificationDocument: File[] | undefined;
   identificationDocumentId: string | null;
   identificationDocumentUrl: string | null;
   privacyConsent: boolean;
