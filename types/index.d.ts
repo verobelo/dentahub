@@ -12,8 +12,11 @@ declare interface CreateUserParams {
   password: string;
   phone: string;
 }
-declare interface User extends CreateUserParams {
+declare interface User {
   $id: string;
+  username: string;
+  email: string;
+  phone: string;
 }
 
 declare interface RegisterUserParams {
