@@ -40,7 +40,7 @@ export default function PasskeyModal() {
         setIsOpen(true);
       }
     }
-  }, [encryptedKey]);
+  }, [encryptedKey, path, router]);
 
   function closeModal() {
     setIsOpen(false);
