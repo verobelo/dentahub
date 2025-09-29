@@ -22,6 +22,7 @@ import {
 import DentalChatBot from '@/components/DentalChatBot';
 import PersonalInformation from '@/components/PersonalInformation';
 import { Button } from '@/components/ui/button';
+import LogoutButton from '@/components/LogoutButton';
 
 export default function Dashboard() {
   const [user, setUser] = useState<Models.User<Models.Preferences> | null>(
@@ -51,6 +52,7 @@ export default function Dashboard() {
         <Link href='/' className='cursor-pointer'>
           <Image src='/logo-dark.png' alt='logo' width={200} height={200} />
         </Link>
+        <LogoutButton />
       </header>
       <main className='flex flex-col items-center space-y-6 px-[5%] pb-12 xl:space-y-12 xl:px-12'>
         <section className='w-full space-y-4'>
