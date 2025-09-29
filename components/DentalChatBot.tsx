@@ -18,15 +18,13 @@ export default function DentalChatbot() {
   return (
     <div className='bg-dark-400 rounded-lg p-4 h-96 flex flex-col justify-end'>
       <div className='space-y-4 mb-4 max-h-80 overflow-y-auto'>
-        {messages.length === 0 && (
-          <div className='flex justify-start'>
-            <div className='bg-dark-500 text-light-200 p-3 rounded-lg w-[80%] text-left'>
-              Hi! I can help you with general questions about dental procedures,
-              appointment preparation, and oral health tips. How can I assist
-              you today?
-            </div>
+        <div className='flex justify-start'>
+          <div className='bg-dark-500 text-light-200 p-3 rounded-lg w-[80%] text-left'>
+            Hi! I can help you with general questions about dental procedures,
+            appointment preparation, and oral health tips. How can I assist you
+            today?
           </div>
-        )}
+        </div>
 
         {messages.map((message) => (
           <div
@@ -59,10 +57,12 @@ export default function DentalChatbot() {
                             <p className='mb-2 text-left'>{children}</p>
                           ),
                           ul: ({ children }) => (
-                            <ul className='mb-2 list-disc'>{children}</ul>
+                            <ul className='mb-2 list-disc list-inside ml-4'>
+                              {children}
+                            </ul>
                           ),
                           ol: ({ children }) => (
-                            <ol className='mb-2 list-disc'>{children}</ol>
+                            <ol className='mb-2'>{children}</ol>
                           ),
                           li: ({ children }) => (
                             <li className='mb-1 text-left'>{children}</li>
