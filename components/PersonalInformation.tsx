@@ -13,8 +13,12 @@ import { Patient } from '@/types/appwrite.types';
 import { useEffect, useState } from 'react';
 import { FadeLoader } from 'react-spinners';
 
-export default function PersonalInformation({ userId }: { userId: string }) {
-  const [patient, setPatient] = useState<Patient | null>(null);
+export default function PersonalInformation({
+  userId,
+}: {
+  userId: string | undefined;
+}) {
+  const [patient, setPatient] = useState<Partial<Patient> | null>(null);
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
@@ -70,7 +74,11 @@ export default function PersonalInformation({ userId }: { userId: string }) {
 
         <TableRow>
           <TableCell className='bg-dark-500'>Birth date</TableCell>
-          <TableCell>{formatDateTime(patient?.birthDate).dateOnly}</TableCell>
+          <TableCell>
+            {patient?.birthDate
+              ? formatDateTime(patient.birthDate).dateOnly
+              : 'N/A'}
+          </TableCell>
         </TableRow>
 
         <TableRow>
