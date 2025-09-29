@@ -83,6 +83,7 @@ export function DataTable<TData, TValue>({
       </Table>
       <div className='flex w-full items-center justify-between space-x-2 p-4'>
         <Button
+          aria-label='Go to previous page'
           className='border border-dark-500 cursor-pointer bg-dark-400 text-white'
           variant='outline'
           size='sm'
@@ -91,6 +92,7 @@ export function DataTable<TData, TValue>({
           <MoveLeft />
         </Button>
         <Button
+          aria-label='Go to next page'
           className='border border-dark-500 cursor-pointer bg-dark-400 text-white'
           variant='outline'
           size='sm'
