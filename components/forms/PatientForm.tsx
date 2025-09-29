@@ -119,7 +119,7 @@ export default function PatientForm() {
         <div className='flex justify-between'>
           <Button
             type='button'
-            className='bg-red-600 hover:brightness-110'
+            className='bg-green-700 hover:brightness-110'
             onClick={handleDemo}>
             Demo Patient
           </Button>
@@ -127,7 +127,7 @@ export default function PatientForm() {
             <p className='text-dark-700'>Already have an account?</p>
             <Link
               href='/?login=true'
-              className='text-green-400 underline hover:brightness-115'>
+              className='text-green-500 underline hover:brightness-115'>
               Log in
             </Link>
           </div>
