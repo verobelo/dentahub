@@ -1,12 +1,9 @@
 'use client';
 
-import { useRouter } from 'next/navigation';
 import { Button } from './ui/button';
 import { LogOut } from 'lucide-react';
 
 export default function AdminLogoutButton() {
-  const router = useRouter();
-
   function handleAdminLogout() {
     localStorage.removeItem('accessKey');
     window.location.href = '/';
