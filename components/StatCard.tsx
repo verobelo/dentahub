@@ -27,7 +27,7 @@ export default function StatCard({
       <div className='flex items-center gap-4'>
         <Image
           src={icon}
-          alt='label'
+          alt={type}
           width={32}
           height={32}
           className='size-8 w-fit'
