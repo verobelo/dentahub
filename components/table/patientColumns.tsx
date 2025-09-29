@@ -57,7 +57,7 @@ export const patientColumns: ColumnDef<Appointment>[] = [
       return (
         <div className='flex flex-col md:flex-row items-center gap-3'>
           <Image
-            src={doctor?.image}
+            src={doctor?.image || '/user.svg'}
             alt='Primary Doctor'
             width={100}
             height={100}
