@@ -119,7 +119,7 @@ export default function PatientForm() {
         <div className='flex justify-between'>
           <Button
             type='button'
-            className='bg-red-500 hover:brightness-110'
+            className='bg-red-600 hover:brightness-110'
             onClick={handleDemo}>
             Demo Patient
           </Button>
