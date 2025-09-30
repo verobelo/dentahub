@@ -83,27 +83,27 @@ export default function PasskeyModal() {
             onChange={(value) => setPassKey(value)}>
             <InputOTPGroup className='w-full flex justify-between'>
               <InputOTPSlot
-                className='text-4xl font-bold leading-[40px] justify-center flex border border-dark-500 rounded-lg size-16 gap-4'
+                className='text-4xl font-bold leading-[40px] justify-center flex border border-dark-500 rounded-lg size-12 md:size-16 gap-4'
                 index={0}
               />
               <InputOTPSlot
-                className='text-4xl font-bold leading-[40px] justify-center flex border border-dark-500 rounded-lg size-16 gap-4'
+                className='text-4xl font-bold leading-[40px] justify-center flex border border-dark-500 rounded-lg size-12 md:size-16 gap-4'
                 index={1}
               />
               <InputOTPSlot
-                className='text-4xl font-bold leading-[40px] justify-center flex border border-dark-500 rounded-lg size-16 gap-4'
+                className='text-4xl font-bold leading-[40px] justify-center flex border border-dark-500 rounded-lg size-12 md:size-16 gap-4'
                 index={2}
               />
               <InputOTPSlot
-                className='text-4xl font-bold leading-[40px] justify-center flex border border-dark-500 rounded-lg size-16 gap-4'
+                className='text-4xl font-bold leading-[40px] justify-center flex border border-dark-500 rounded-lg size-12 md:size-16 gap-4'
                 index={3}
               />
               <InputOTPSlot
-                className='text-4xl font-bold leading-[40px] justify-center flex border border-dark-500 rounded-lg size-16 gap-4'
+                className='text-4xl font-bold leading-[40px] justify-center flex border border-dark-500 rounded-lg size-12 md:size-16 gap-4'
                 index={4}
               />
               <InputOTPSlot
-                className='text-4xl font-bold leading-[40px] justify-center flex border border-dark-500 rounded-lg size-16 gap-4'
+                className='text-4xl font-bold leading-[40px] justify-center flex border border-dark-500 rounded-lg size-12 md:size-16 gap-4'
                 index={5}
               />
             </InputOTPGroup>
