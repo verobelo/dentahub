@@ -1,6 +1,8 @@
-<div align="center">
-  <img src="./public/dentahub.png" alt="DentaHub Banner" width="100%" height="100%">
-</div>
+<h1 align="center">
+  <a href="https://dentahub.vercel.app/">
+     <img src="./public/dentahub.png" alt="DentaHub Banner" width="100%" height="100%">
+  </a> 
+</h1>
 
 ## 🦷 DentaHub - Modern Dental Appointment System
 
