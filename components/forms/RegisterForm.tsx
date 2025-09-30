@@ -45,12 +45,28 @@ export default function RegisterForm({ user }: { user: User }) {
       values.identificationDocument.length > 0
     ) {
       const file = values.identificationDocument[0];
-      if (!file || !file.size) {
-        return;
+
+      if (!file) {
+        throw new Error('No file selected');
       }
 
+      if (!file.type || file.type === '') {
+        throw new Error('File type not detected');
+      }
+
+      if (!file.size || file.size === 0) {
+        throw new Error('File has no content');
+      }
+      const reader = new FileReader();
+      const fileData = await new Promise<string>((resolve, reject) => {
+        reader.onload = () => resolve(reader.result as string);
+        reader.onerror = reject;
+        reader.readAsDataURL(file);
+      });
+
       formData = new FormData();
-      formData.append('blobFile', file, file.name);
+      const blob = await fetch(fileData).then((r) => r.blob());
+      formData.append('blobFile', blob, file.name);
       formData.append('fileName', file.name);
     }
 
