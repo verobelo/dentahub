@@ -24,8 +24,6 @@ import PersonalInformation from '@/components/PersonalInformation';
 import { Button } from '@/components/ui/button';
 import LogoutButton from '@/components/LogoutButton';
 
-export const revalidate = 0;
-
 export default function Dashboard() {
   const [user, setUser] = useState<Models.User<Models.Preferences> | null>(
     null
