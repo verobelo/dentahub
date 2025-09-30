@@ -32,17 +32,16 @@ export async function registerPatient({
 }: RegisterUserParams) {
   let file;
   if (identificationDocument) {
-    const inputFile =
-      identificationDocument &&
-      InputFile.fromBuffer(
-        identificationDocument?.get('blobFile') as Blob,
-        identificationDocument?.get('fileName') as string
-      );
+    const fileObject = identificationDocument.get('blobFile') as File;
+
+    if (!fileObject || !(fileObject instanceof File)) {
+      throw new Error('Invalid file object');
+    }
 
     file = await storage.createFile({
       bucketId: BUCKET_ID!,
       fileId: ID.unique(),
-      file: inputFile,
+      file: fileObject,
     });
   }
 
@@ -86,18 +85,19 @@ export async function updatePatient(
 }
 
 export async function uploadIdentificationDocument(formData: FormData) {
-  const inputFile = InputFile.fromBuffer(
-    formData.get('blobFile') as Blob,
-    formData.get('fileName') as string
+  const fileObject = formData.get('blobFile') as File;
+
+  if (!fileObject || !(fileObject instanceof File)) {
+    throw new Error('Invalid file object');
+  }
+
+  const uploadedFile = await storage.createFile(
+    BUCKET_ID!,
+    ID.unique(),
+    fileObject
   );
 
-  const file = await storage.createFile({
-    bucketId: BUCKET_ID!,
-    fileId: ID.unique(),
-    file: inputFile,
-  });
-
-  return file;
+  return uploadedFile;
 }
 
 export async function addPhoneToUser(userId: string, number: string) {
