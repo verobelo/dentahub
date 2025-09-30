@@ -352,13 +352,12 @@ export default function EditPatientForm() {
                     <p className='text-sm text-gray-600 mb-2'>
                       Current document:
                     </p>
-                    <Image
-                      width={100}
-                      height={100}
+                    <img
                       src={patient.identificationDocumentUrl}
                       alt='Current ID Document'
                       className='w-32 h-32 object-cover'
-                      unoptimized
+                      crossOrigin='anonymous'
+                      loading='lazy'
                     />
                   </div>
                 )}
