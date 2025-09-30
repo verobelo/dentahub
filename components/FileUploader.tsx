@@ -58,9 +58,15 @@ export default function FileUploader({ files, onChange }: FileUploaderProps) {
               <span className='text-green-500'>Click to upload</span> or drag
               and drop
             </p>
+            <p className='text-base'>
+              The only allowed formats are:{' '}
+              <span className='text-green-500'>JPG(JPEG), PNG, SVG, PDF</span>.
+              Max.size is <span className='text-green-500'>2MB.</span>
+            </p>
             <p className='text-sm'>
-              For best results, use files under 2MB. iPhone users: select
-              `Small` size when uploading photos.
+              <span className='text-white'>iPhone users:</span> If upload
+              doesn&apos;t work, tap &quot;Options&quot; and select
+              &quot;Current&quot; format.
             </p>
           </div>
         </>
