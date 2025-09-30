@@ -162,6 +162,8 @@ export default function PersonalInformation({
                 src={patient.identificationDocumentUrl}
                 alt='Identification Document'
                 className='w-16 h-16 object-cover rounded'
+                crossOrigin='anonymous'
+                loading='lazy'
               />
             ) : (
               <span className='text-gray-500'>No image</span>
