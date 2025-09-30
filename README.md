@@ -24,16 +24,30 @@
 
 ## 📋 Table of Contents
 
+- [Demo Access](#-demo-access)
 - [The Problem](#-the-problem)
 - [The Solution](#-the-solution)
 - [Key Features](#-key-features)
 - [Tech Stack](#-tech-stack)
-- [Getting Started](#-getting-started)
-- [Demo Access](#-demo-access)
 - [What I Learned](#-what-i-learned)
 - [Future Enhancements](#-future-enhancements)
 - [Important Notes](#-important-notes)
 
+
+---
+
+## 🎭 Demo Access
+
+**Live Demo:** [dentahub-manage.vercel.app](https://dentahub-manage.vercel.app)
+
+### Patient Dashboard
+Click the **"Demo Patient"** button on the homepage to instantly access a pre-configured patient account and explore all features.
+
+### Admin Dashboard
+1. Click "Admin" in the footer of the homepage
+2. Enter passkey: `123456`
+3. Explore appointment management features
+   
 ---
 
 ## 🔍 The Problem
@@ -74,7 +88,13 @@ Meanwhile, clinic administrators can:
 
 ---
 
+
+<details open>
+<summary>
 ## ✨ Key Features
+</summary> <br />
+
+---
 
 ### For Patients
 
@@ -154,21 +174,6 @@ Meanwhile, clinic administrators can:
 - **react-phone-number-input** - International phone formatting
 - **react-markdown** - Chatbot response formatting
 - **lucide-react** - Icon library
-
----
-
-
-## 🎭 Demo Access
-
-**Live Demo:** [dentahub-manage.vercel.app](https://dentahub-manage.vercel.app)
-
-### Patient Dashboard
-Click the **"Demo Patient"** button on the homepage to instantly access a pre-configured patient account and explore all features.
-
-### Admin Dashboard
-1. Navigate to `/admin` or click "Admin" in the footer
-2. Enter passkey: `123456`
-3. Explore appointment management features
 
 ---
 
