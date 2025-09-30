@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="/logo-dark.png" alt="DentaHub Banner" width="100%">
+</div>
+
 # 🦷 DentaHub - Modern Dental Practice Management System
 
 [![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://dentahub-manage.vercel.app)
