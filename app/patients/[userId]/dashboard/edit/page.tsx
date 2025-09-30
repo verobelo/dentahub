@@ -356,7 +356,6 @@ export default function EditPatientForm() {
                       src={patient.identificationDocumentUrl}
                       alt='Current ID Document'
                       className='w-32 h-32 object-cover'
-                      crossOrigin='anonymous'
                       loading='lazy'
                     />
                   </div>
