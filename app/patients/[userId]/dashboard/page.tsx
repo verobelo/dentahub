@@ -24,6 +24,8 @@ import PersonalInformation from '@/components/PersonalInformation';
 import { Button } from '@/components/ui/button';
 import LogoutButton from '@/components/LogoutButton';
 
+export const revalidate = 0;
+
 export default function Dashboard() {
   const [user, setUser] = useState<Models.User<Models.Preferences> | null>(
     null
@@ -48,7 +50,7 @@ export default function Dashboard() {
 
   return (
     <div className='mx-auto flex max-w-7xl flex-col space-y-14'>
-      <header className='sticky top-3 z-20 mx-3 flex flex-row items-center justify-between rounded-2xl bg-dark-200 px-[5%] py-3 shadow-lg xl:px-12'>
+      <header className='mx-3 flex flex-row items-center justify-between rounded-2xl bg-dark-200 px-[5%] py-3 shadow-lg xl:px-12'>
         <Link href='/' className='cursor-pointer'>
           <Image src='/logo-dark.png' alt='logo' width={200} height={200} />
         </Link>
