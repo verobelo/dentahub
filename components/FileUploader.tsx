@@ -20,13 +20,21 @@ export default function FileUploader({ files, onChange }: FileUploaderProps) {
   );
   const { getRootProps, getInputProps } = useDropzone({
     onDrop,
+    accept: {
+      'image/jpeg': ['.jpg', '.jpeg'],
+      'image/png': ['.png'],
+      'image/svg': ['.svg'],
+      'application/pdf': ['.pdf'],
+    },
     maxSize: 2097152,
     onDropRejected: (fileRejections) => {
       const error = fileRejections[0]?.errors[0];
       if (error?.code === 'file-too-large') {
         toast.error('File is too large. Maximum size is 2MB.');
       } else if (error?.code === 'file-invalid-type') {
-        toast.error('File type not supported. Please use JPG, PNG, or PDF.');
+        toast.error(
+          'File type not supported. Please use JPG, PNG, SVG or PDF.'
+        );
       }
     },
   });
