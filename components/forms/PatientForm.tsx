@@ -116,7 +116,7 @@ export default function PatientForm() {
           required={true}
         />
         <SubmitButton isLoading={isLoading}>Create an account</SubmitButton>
-        <div className='flex justify-between'>
+        <div className='flex flex-col gap-3 md:flex-row md:justify-between'>
           <Button
             type='button'
             className='bg-green-700 hover:brightness-110'
