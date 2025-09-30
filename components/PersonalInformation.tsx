@@ -162,7 +162,6 @@ export default function PersonalInformation({
                 src={patient.identificationDocumentUrl}
                 alt='Identification Document'
                 className='w-16 h-16 object-cover rounded'
-                crossOrigin='anonymous'
                 loading='lazy'
               />
             ) : (
