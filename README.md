@@ -1,9 +1,13 @@
 # 🦷 DentaHub - Modern Dental Practice Management System
 
 [![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://dentahub-manage.vercel.app)
+
+
+
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Next.js](https://img.shields.io/badge/Next.js_15-black?logo=next.js&logoColor=white)](https://nextjs.org/)
 [![Appwrite](https://img.shields.io/badge/Appwrite-F02E65?logo=appwrite&logoColor=white)](https://appwrite.io/)
+[![Tailwind](https://img.shields.io/badge/Tailwind-black?logo=tailwind&logoColor=white)](https://tailwindcss.com/)
 
 > **A full-stack healthcare management platform that digitizes patient registration, appointment scheduling, and clinic administration.**
 
