@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./public/dentahub.png" alt="DentaHub Banner">
+  <img src="./public/dentahub.png" alt="DentaHub Banner" width="100%" height="100%">
 </div>
 
 # 🦷 DentaHub - Modern Dental Practice Management System
