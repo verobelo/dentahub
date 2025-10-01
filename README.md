@@ -38,7 +38,7 @@
 
 ## 🎭 Demo Access
 
-**Live Demo:** [dentahub-manage.vercel.app](https://dentahub-manage.vercel.app)
+**Live Demo:** [dentahub.vercel.app](https://dentahub.vercel.app)
 
 ### Patient Dashboard
 Click the **"Demo Patient"** button on the homepage to instantly access a pre-configured patient account and explore all features.
@@ -53,7 +53,7 @@ Click the **"Demo Patient"** button on the homepage to instantly access a pre-co
 
 <details open>
 <summary>
-## ✨ Key Features
+✨ Key Features
 </summary> <br />
 
 <p align="center">
@@ -90,7 +90,6 @@ After working in customer service for 10 years, including at a dental clinic, I 
 
 **For Patients:**
 - Uncomfortable filling out lengthy forms in waiting rooms under time pressure
-- Illegible handwriting leading to errors in patient records
 - No way to track appointments or update personal information
 - Forms could be lost or damaged
 
@@ -99,7 +98,6 @@ After working in customer service for 10 years, including at a dental clinic, I 
 - Time-consuming manual data entry and retrieval
 - Risk of losing important patient documents
 - No centralized system for appointment management
-- Mixing sensitive medical data with basic administrative information
 
 These pain points inspired me to create a digital solution that improves the experience for both patients and healthcare providers.
 
@@ -107,8 +105,9 @@ These pain points inspired me to create a digital solution that improves the exp
 
 ## ✅ The Solution
 
-**DentaHub** is a modern web application that streamlines the entire patient journey - from registration to appointment management. The platform separates administrative tasks from medical workflows, allowing patients to:
+**DentaHub** is a modern web application that streamlines the entire patient journey - from registration to appointment management. 
 
+Patients can:
 - Complete registration forms at their own pace from any device
 - View and manage their appointments in real-time
 - Update personal information without clinic visits
@@ -117,7 +116,6 @@ These pain points inspired me to create a digital solution that improves the exp
 Meanwhile, clinic administrators can:
 - Manage all appointments from a centralized dashboard
 - Confirm or cancel appointments with automated SMS notifications
-- Access patient information securely with proper authentication
 - Track appointment statistics (scheduled, pending, cancelled)
 
 ---
@@ -125,15 +123,15 @@ Meanwhile, clinic administrators can:
 ## 🛠 Tech Stack
 
 ### Frontend
-- **Next.js 15** - React framework with App Router
-- **TypeScript** - Type-safe development
-- **Tailwind CSS** - Utility-first styling
-- **shadcn/ui** - Accessible component library
-- **react-hook-form** - Performant form management
-- **Zod** - Schema validation
-
+- **Next.js 15** 
+- **TypeScript**
+- **Tailwind CSS**
+- **shadcn/ui**
+- **react-hook-form**
+- **Zod**
+- 
 ### Backend & Services
-- **Appwrite** - Backend-as-a-Service
+- **Appwrite**
   - Authentication
   - Database (NoSQL)
   - Storage (file uploads)
@@ -142,62 +140,13 @@ Meanwhile, clinic administrators can:
 - **Twilio** - SMS notifications
 
 ### Key Libraries
-- **react-datepicker** - Date and time selection
-- **react-phone-number-input** - International phone formatting
-- **react-markdown** - Chatbot response formatting
-- **lucide-react** - Icon library
+- **react-datepicker**
+- **react-phone-number-input**
+- **react-markdown**
+- **react-hot-toast**
+- **lucide-react**
 
 ---
-
-## 📚 What I Learned
-
-### Technical Growth
-
-**Appwrite Mastery**
-This was my first project using Appwrite after working with Supabase. The documentation presented challenges, but I learned to:
-- Distinguish between client-side and server-side Appwrite implementations
-- Implement secure authentication flows
-- Manage file storage and retrieval
-- Handle real-time database updates
-
-**SMS Integration with Twilio**
-Implemented automated notification system that:
-- Sends appointment confirmations
-- Alerts patients of cancellations
-- Updates appointment status in real-time across the platform
-
-**Complex Form Handling**
-Built multi-step forms with:
-- Real-time validation using Zod schemas
-- Dynamic field rendering based on user input
-- File upload with preview
-- Phone number formatting for international numbers
-- Date/time selection with business logic constraints
-
-### Problem-Solving Highlights
-
-**Doctor Availability Logic**
-Created an algorithm that:
-- Filters time slots by business hours
-- Checks existing appointments to prevent double-booking
-- Updates availability in real-time as appointments are scheduled
-- Handles different time zones correctly
-
-**Next.js Caching Challenges**
-Learned to manage Next.js 15's aggressive caching strategy by:
-- Implementing proper revalidation strategies
-- Using `force-dynamic` for real-time admin data
-- Understanding the difference between build-time and runtime data fetching
-
-**Type Safety Throughout**
-Maintained full TypeScript coverage with:
-- Custom interfaces for Patient, Appointment, and User types
-- Zod schemas that match TypeScript interfaces
-- Generic form components that work with any schema
-- Proper error handling with typed catch blocks
-
----
-
 ## 🔮 Future Enhancements
 
 While the current version is fully functional, here are planned improvements:
@@ -205,18 +154,15 @@ While the current version is fully functional, here are planned improvements:
 - **Email Verification** - Easy to implement with Appwrite's built-in email service
 - **Multi-language Support** - Internationalization for broader accessibility
 - **Payment Integration** - Stripe/PayPal for appointment deposits
-- **Video Consultations** - Integrate Zoom or similar for telehealth
-- **Medical Records** - Separate secure section for clinical notes (dentist-only access)
 - **Appointment Reminders** - Automated SMS/email reminders 24 hours before appointments
-- **Advanced Analytics** - Charts and graphs for appointment trends
-- **Patient Reviews** - Rating system for doctors and services
 - **Export Reports** - PDF generation for patient records
 
 ---
 
-## ⚠️ Important Notes
+> [!NOTE]
+> **Portfolio Project Disclaimers**
 
-### Portfolio Project Disclaimers
+
 
 **Admin Passkey Exposure**
 The admin passkey (`123456`) is intentionally exposed for demonstration purposes only. In a production environment:
