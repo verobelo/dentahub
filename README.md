@@ -160,14 +160,15 @@ While the current version is fully functional, here are planned improvements:
 
 > [!NOTE]
 > **Portfolio Project Disclaimers**
-> **Admin Passkey Exposure**
+
+**Admin Passkey Exposure**
 The admin passkey (`123456`) is intentionally exposed for demonstration purposes only. In a production environment:
 - Passkeys would NEVER be exposed in code or documentation
 - Multi-factor authentication would be implemented
 - Role-based access control would be enforced
 - Admin sessions would have timeout mechanisms
 
-> **Privacy & Compliance**
+**Privacy & Compliance**
 This application demonstrates technical capabilities but is not HIPAA-compliant in its current state. For real-world medical use, additional features would be required:
 - HIPAA-compliant data encryption at rest and in transit
 - Audit logging for all data access
@@ -181,7 +182,7 @@ The current privacy consent system is simplified - each medical institution woul
 - Insurance requirements
 - Legal jurisdiction
 
-> **Data Security**
+**Data Security**
 - All sensitive data is encrypted by Appwrite
 - Files are stored securely with access control
 - Authentication tokens are httpOnly cookies
