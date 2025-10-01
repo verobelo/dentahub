@@ -7,7 +7,7 @@
 ## 🦷 DentaHub - Modern Dental Appointment System
 > **A full-stack dental platform that digitizes patient registration, appointment scheduling and administration.**
 
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Next.js](https://img.shields.io/badge/Next.js_15-black?logo=next.js&logoColor=white)](https://nextjs.org/)
 [![Appwrite](https://img.shields.io/badge/Appwrite-F02E65?logo=appwrite&logoColor=white)](https://appwrite.io/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
@@ -25,9 +25,9 @@
 ## 📋 Table of Contents
 
 - [Demo Access](#-demo-access)
+- [Key Features](#-key-features)
 - [The Problem](#-the-problem)
 - [The Solution](#-the-solution)
-- [Key Features](#-key-features)
 - [Tech Stack](#-tech-stack)
 - [What I Learned](#-what-i-learned)
 - [Future Enhancements](#-future-enhancements)
@@ -47,7 +47,41 @@ Click the **"Demo Patient"** button on the homepage to instantly access a pre-co
 1. Click "Admin" in the footer of the homepage
 2. Enter passkey: `123456`
 3. Explore appointment management features
+4. SMS notification is fully set up but not available in Demo mode (see Key Features for screenshots)
    
+---
+
+<details open>
+<summary>
+## ✨ Key Features
+</summary> <br />
+
+<p align="center">
+    <img width="49%" src="./assets/authentication.png" alt="authentication"/>
+&nbsp;
+    <img width="49%" src="./assets/registration.png" alt="registration"/>
+</p>
+
+<p align="center">
+    <img width="49%" src="./assets/patients.png" alt="patients"/>
+&nbsp;
+    <img width="49%" src="./assets/73097785/appointments.png" alt="appointments"/>
+</p> 
+    
+<p align="center">
+    <img width="49%" src="./assets/passkey" alt="passkey"/>
+&nbsp;
+    <img width="49%" src="./assets/admin-dash.png" alt="admin dashboard"/>
+</p>
+
+<p align="center">
+    <img width="49%" src="./assets/ai" alt="ai"/>
+&nbsp;
+    <img width="49%" src="./assets/sms.png" alt="sms"/>
+</p>
+
+</details>
+
 ---
 
 ## 🔍 The Problem
@@ -85,68 +119,6 @@ Meanwhile, clinic administrators can:
 - Confirm or cancel appointments with automated SMS notifications
 - Access patient information securely with proper authentication
 - Track appointment statistics (scheduled, pending, cancelled)
-
----
-
-
-<details open>
-<summary>
-## ✨ Key Features
-</summary> <br />
-
----
-
-### For Patients
-
-**🔐 Secure Authentication**
-- User registration and login with Appwrite authentication
-- Password visibility toggle for better UX
-- Demo patient access for recruiters and testing
-
-**👤 Patient Dashboard**
-- View all upcoming and past appointments
-- Edit personal information and medical history
-- Upload identification documents
-- Real-time appointment status updates
-
-**📅 Smart Appointment Scheduling**
-- Select preferred doctor from available specialists
-- View doctor availability in real-time
-- Time slots automatically filtered by:
-  - Business hours (9 AM - 9 PM)
-  - Doctor's existing appointments
-  - Prevents double-booking
-- Instant confirmation with appointment details
-
-**🤖 AI Dental Assistant**
-- Powered by OpenAI
-- Answers general dental questions
-- Provides appointment preparation tips
-- Programmed to never give medical advice (safety first!)
-- Markdown-formatted responses for better readability
-
-### For Administrators
-
-**🔒 Secure Admin Access**
-- Protected by 6-digit passkey verification
-- Encrypted passkey storage in localStorage
-- Admin-only routes with authentication guards
-
-**📊 Comprehensive Dashboard**
-- Real-time statistics:
-  - Total scheduled appointments
-  - Pending appointment requests
-  - Cancelled appointments
-- Sortable and filterable appointment table
-- Quick-view patient information
-
-**⚡ Appointment Management**
-- Confirm pending appointments
-- Cancel appointments with reason tracking
-- Automated SMS notifications via Twilio:
-  - Appointment confirmations
-  - Cancellation alerts
-  - Real-time status updates in patient dashboard
 
 ---
 
