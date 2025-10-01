@@ -18,7 +18,7 @@
 
 
 
-<img src="./assets/screen-capture.gif" alt="website preview" width="100%"/>
+<video src="./assets/screen-capture.webm" alt="website preview" width="100%" autoplay/>
 
 ---
 
