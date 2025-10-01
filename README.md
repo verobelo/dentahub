@@ -18,7 +18,10 @@
 
 
 
-<img src="./assets/screen-capture.gif" alt="website preview" width="100%"/>
+<video width="100%" autoplay> 
+<source src="./assets/screen-capture.webm" type="video/webm"/>
+  Demo Video
+</video>
 
 ---
 
