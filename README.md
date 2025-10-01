@@ -158,29 +158,21 @@ While the current version is fully functional, here are planned improvements:
 
 ---
 
-> [!NOTE]
-> **Portfolio Project Disclaimers**
+> [!IMPORTANT]
+> **Disclaimers**
 
 **Admin Passkey Exposure**
-The admin passkey (`123456`) is intentionally exposed for demonstration purposes only. In a production environment:
-- Passkeys would NEVER be exposed in code or documentation
-- Multi-factor authentication would be implemented
-- Role-based access control would be enforced
-- Admin sessions would have timeout mechanisms
+The admin passkey is intentionally exposed for demonstration purposes only. In a production environment passkeys would never be exposed in code or documentation.
 
 **Privacy & Compliance**
-This application demonstrates technical capabilities but is not HIPAA-compliant in its current state. For real-world medical use, additional features would be required:
-- HIPAA-compliant data encryption at rest and in transit
-- Audit logging for all data access
-- Patient consent management specific to jurisdiction
-- Data retention and deletion policies
-- Business Associate Agreements with third-party services
+This application demonstrates technical capabilities but is not GDPR-compliant in its current state. For real-world medical use in the EU, additional features would be required:
+- GDPR-compliant data encryption and audit logging
+- Data subject rights implementation (access, erasure, portability)
+- Data Protection Impact Assessment (DPIA)
+- Data Processing Agreements with third-party services
+- Patient consent management and data retention policies
 
-The current privacy consent system is simplified - each medical institution would need to implement their own specific privacy policies based on:
-- Local healthcare regulations
-- Institutional policies
-- Insurance requirements
-- Legal jurisdiction
+While Appwrite offers compliance features, each EU member state may have additional healthcare data regulations that must be addressed.
 
 **Data Security**
 - All sensitive data is encrypted by Appwrite
