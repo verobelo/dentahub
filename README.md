@@ -65,7 +65,7 @@ Click the **"Demo Patient"** button on the homepage to instantly access a pre-co
 <p align="center">
     <img width="49%" src="./assets/patients.png" alt="patients"/>
 &nbsp;
-    <img width="49%" src="./assets/73097785/appointments.png" alt="appointments"/>
+    <img width="49%" src="./assets/appointments.png" alt="appointments"/>
 </p> 
     
 <p align="center">
@@ -75,7 +75,7 @@ Click the **"Demo Patient"** button on the homepage to instantly access a pre-co
 </p>
 
 <p align="center">
-    <img width="49%" src="./assets/ai" alt="ai"/>
+    <img width="49%" src="./assets/ai.png" alt="ai"/>
 &nbsp;
     <img width="49%" src="./assets/sms.png" alt="sms"/>
 </p>
