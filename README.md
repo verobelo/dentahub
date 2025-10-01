@@ -18,7 +18,9 @@
 
 
 
-<video src="./assets/screen-capture.webm" alt="website preview" width="100%" autoplay/>
+<video width="100%" autoplay> 
+<source src="./assets/screen-capture.webm" type="video/webm"/>
+</video>
 
 ---
 
