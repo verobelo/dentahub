@@ -1,15 +1,22 @@
-# 🦷 DentaHub - Modern Dental Practice Management System
+<h1 align="center">
+  <a href="https://dentahub.vercel.app/">
+     <img src="./public/dentahub.png" alt="DentaHub Banner" width="100%" height="100%">
+  </a> 
+</h1>
 
-[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://dentahub-manage.vercel.app)
+## 🦷 DentaHub - Modern Dental Appointment System
+> **A full-stack dental platform that digitizes patient registration, appointment scheduling and administration.**
 
-
-
-[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Next.js](https://img.shields.io/badge/Next.js_15-black?logo=next.js&logoColor=white)](https://nextjs.org/)
 [![Appwrite](https://img.shields.io/badge/Appwrite-F02E65?logo=appwrite&logoColor=white)](https://appwrite.io/)
-[![Tailwind](https://img.shields.io/badge/Tailwind-black?logo=tailwind&logoColor=white)](https://tailwindcss.com/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![shadcn/ui](https://img.shields.io/badge/shadcn/ui-000000?logo=shadcnui&logoColor=white)](https://ui.shadcn.com/)
+[![Vercel](https://img.shields.io/badge/Vercel-000000?logo=vercel&logoColor=white)](https://vercel.com/)
+[![OpenAI](https://img.shields.io/badge/OpenAI-412991?logo=openai&logoColor=white)](https://openai.com/)
 
-> **A full-stack healthcare management platform that digitizes patient registration, appointment scheduling, and clinic administration.**
+
+
 
 [**🎥 Watch Demo Video**](#) <!-- Add your Loom video link here -->
 
@@ -17,16 +24,30 @@
 
 ## 📋 Table of Contents
 
+- [Demo Access](#-demo-access)
 - [The Problem](#-the-problem)
 - [The Solution](#-the-solution)
 - [Key Features](#-key-features)
 - [Tech Stack](#-tech-stack)
-- [Getting Started](#-getting-started)
-- [Demo Access](#-demo-access)
 - [What I Learned](#-what-i-learned)
 - [Future Enhancements](#-future-enhancements)
 - [Important Notes](#-important-notes)
 
+
+---
+
+## 🎭 Demo Access
+
+**Live Demo:** [dentahub-manage.vercel.app](https://dentahub-manage.vercel.app)
+
+### Patient Dashboard
+Click the **"Demo Patient"** button on the homepage to instantly access a pre-configured patient account and explore all features.
+
+### Admin Dashboard
+1. Click "Admin" in the footer of the homepage
+2. Enter passkey: `123456`
+3. Explore appointment management features
+   
 ---
 
 ## 🔍 The Problem
@@ -67,7 +88,13 @@ Meanwhile, clinic administrators can:
 
 ---
 
+
+<details open>
+<summary>
 ## ✨ Key Features
+</summary> <br />
+
+---
 
 ### For Patients
 
@@ -147,21 +174,6 @@ Meanwhile, clinic administrators can:
 - **react-phone-number-input** - International phone formatting
 - **react-markdown** - Chatbot response formatting
 - **lucide-react** - Icon library
-
----
-
-
-## 🎭 Demo Access
-
-**Live Demo:** [dentahub-manage.vercel.app](https://dentahub-manage.vercel.app)
-
-### Patient Dashboard
-Click the **"Demo Patient"** button on the homepage to instantly access a pre-configured patient account and explore all features.
-
-### Admin Dashboard
-1. Navigate to `/admin` or click "Admin" in the footer
-2. Enter passkey: `123456`
-3. Explore appointment management features
 
 ---
 
