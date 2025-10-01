@@ -69,7 +69,7 @@ Click the **"Demo Patient"** button on the homepage to instantly access a pre-co
 </p> 
     
 <p align="center">
-    <img width="49%" src="./assets/passkey" alt="passkey"/>
+    <img width="49%" src="./assets/passkey.png" alt="passkey"/>
 &nbsp;
     <img width="49%" src="./assets/admin-dash.png" alt="admin dashboard"/>
 </p>
