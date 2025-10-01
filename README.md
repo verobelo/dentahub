@@ -29,7 +29,6 @@
 - [The Problem](#-the-problem)
 - [The Solution](#-the-solution)
 - [Tech Stack](#-tech-stack)
-- [What I Learned](#-what-i-learned)
 - [Future Enhancements](#-future-enhancements)
 - [Important Notes](#-important-notes)
 
@@ -161,17 +160,14 @@ While the current version is fully functional, here are planned improvements:
 
 > [!NOTE]
 > **Portfolio Project Disclaimers**
-
-
-
-**Admin Passkey Exposure**
+> **Admin Passkey Exposure**
 The admin passkey (`123456`) is intentionally exposed for demonstration purposes only. In a production environment:
 - Passkeys would NEVER be exposed in code or documentation
 - Multi-factor authentication would be implemented
 - Role-based access control would be enforced
 - Admin sessions would have timeout mechanisms
 
-**Privacy & Compliance**
+> **Privacy & Compliance**
 This application demonstrates technical capabilities but is not HIPAA-compliant in its current state. For real-world medical use, additional features would be required:
 - HIPAA-compliant data encryption at rest and in transit
 - Audit logging for all data access
@@ -185,44 +181,11 @@ The current privacy consent system is simplified - each medical institution woul
 - Insurance requirements
 - Legal jurisdiction
 
-**Data Security**
+> **Data Security**
 - All sensitive data is encrypted by Appwrite
 - Files are stored securely with access control
 - Authentication tokens are httpOnly cookies
 - Environment variables protect API keys
-
----
-
-## 🤝 Contributing
-
-This is a portfolio project, but feedback and suggestions are welcome! Feel free to:
-- Open issues for bugs or feature requests
-- Submit pull requests with improvements
-- Share ideas for enhancements
-
----
-
-## 📧 Contact
-
-**Your Name**
-- Portfolio: [your-portfolio.com](#)
-- LinkedIn: [linkedin.com/in/yourprofile](#)
-- Email: your.email@example.com
-
----
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
----
-
-## 🙏 Acknowledgments
-
-- **shadcn/ui** for the beautiful component library
-- **Appwrite** for the robust backend infrastructure
-- **Vercel** for seamless deployment
-- My 10 years in customer service, which taught me to always prioritize user experience
 
 ---
 
