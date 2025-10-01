@@ -5,7 +5,7 @@
 </h1>
 
 ## 🦷 DentaHub - Modern Dental Appointment System
-> **A full-stack dental platform that digitizes patient registration, appointment scheduling and administration.**
+> **A full-stack responsive dental platform that digitizes patient registration, appointment scheduling and administration.**
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Next.js](https://img.shields.io/badge/Next.js_15-black?logo=next.js&logoColor=white)](https://nextjs.org/)
@@ -18,7 +18,7 @@
 
 
 
-[**🎥 Watch Demo Video**](#) <!-- Add your Loom video link here -->
+<img src="./assets/screen-capture.gif" alt="website preview" width="100%"/>
 
 ---
 
