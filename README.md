@@ -20,6 +20,7 @@
 
 <video width="100%" autoplay> 
 <source src="./assets/screen-capture.webm" type="video/webm"/>
+  Demo Video
 </video>
 
 ---
