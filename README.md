@@ -130,7 +130,7 @@ Meanwhile, clinic administrators can:
 - **shadcn/ui**
 - **react-hook-form**
 - **Zod**
-- 
+  
 ### Backend & Services
 - **Appwrite**
   - Authentication
