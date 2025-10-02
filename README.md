@@ -1,10 +1,13 @@
-<h1 align="center">
-  <a href="https://dentahub.vercel.app/">
-     <img src="./public/dentahub.png" alt="DentaHub Banner" width="100%" height="100%">
-  </a> 
-</h1>
+<div align="center">
+  <img src="./assets/dentahub.png" alt="DentaHub Logo" height="120">
+  <h1>DentaHub</h1>
+  <p>Modern Dental Appointment & Patient Management System</p>
+  
+  <a href="https://www.loom.com/share/d71b9d8645634cbfbff0b90f7dd5262c?sid=4492fec9-58e7-43d8-9b0a-12834469dce5">
+    <img src="https://img.shields.io/badge/📹_Watch_Demo-Click_Here-blue?style=for-the-badge" alt="Watch Demo">
+  </a>
+</div>
 
-## 🦷 DentaHub - Modern Dental Appointment System
 > **A full-stack responsive dental platform that digitizes patient registration, appointment scheduling and administration.**
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
@@ -18,10 +21,7 @@
 
 
 
-<video width="100%" autoplay> 
-<source src="./assets/screen-capture.webm" type="video/webm"/>
-  Demo Video
-</video>
+
 
 ---
 
