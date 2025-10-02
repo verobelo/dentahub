@@ -1,11 +1,7 @@
 <div align="center">
   <img src="./assets/dentahub.png" alt="DentaHub Logo" width="100%">
-  <h1>Modern Dental Appointment & Patient Registration System</h1>
-  
-  <a href="https://www.loom.com/share/d71b9d8645634cbfbff0b90f7dd5262c?sid=4492fec9-58e7-43d8-9b0a-12834469dce5">
-    <img src="https://img.shields.io/badge/📹_Watch_2min_Demo-Click_Here-blue?style=for-the-badge" alt="Watch Demo">
-  </a>
-</div>
+  <h1>Modern Dental Appointment & Patient Registration System</h1>  
+  </div>
 
 > **A full-stack responsive dental platform that digitizes patient registration, appointment scheduling and administration.**
 
@@ -39,6 +35,10 @@
 
 ## 🎭 Demo Access
 
+<a href="https://www.loom.com/share/d71b9d8645634cbfbff0b90f7dd5262c?sid=4492fec9-58e7-43d8-9b0a-12834469dce5">
+    <img src="https://img.shields.io/badge/📹_Watch_2min_Demo-Click_Here-blue?style=for-the-badge" alt="Watch Demo">
+</a>
+  
 **Live Demo:** [dentahub.vercel.app](https://dentahub.vercel.app)
 
 ### Patient Dashboard
