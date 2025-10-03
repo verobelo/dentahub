@@ -48,7 +48,7 @@ Click the **"Demo Patient"** button on the homepage to instantly access a pre-co
    
 ---
 ### 🤖 AI-Powered Patient Support
-**Intelligent Dental Chatbot** - Patients can ask common dental questions and receive instant, accurate responses powered by OpenAI's GPT models. The AI is specifically programmed with safety guardrails to **never provide medical advice or diagnoses**, instead directing patients to schedule professional consultations when needed.
+**Intelligent Dental Chatbot** - Patients can ask common dental questions and receive instant, accurate responses powered by OpenAI's GPT models. 
 
 <p align="center">
     <img width="70%" src="./assets/ai.png" alt="AI Dental Assistant"/>
@@ -61,22 +61,12 @@ Click the **"Demo Patient"** button on the homepage to instantly access a pre-co
     <img width="49%" src="./assets/registration.png" alt="Digital Registration"/>
 </p>
 
-- **Secure Authentication** - Phone number-based login with OTP verification
-- **Comprehensive Digital Registration** - Complete patient forms at their own pace from any device
-- **Real-time Appointment Management** - View, schedule, and track appointments instantly
-- **Document Upload** - Secure medical document storage via Appwrite
-
 ### 🏥 Admin Dashboard
 <p align="center">
     <img width="49%" src="./assets/admin-dash.png" alt="Admin Dashboard"/>
 &nbsp;
     <img width="49%" src="./assets/appointments.png" alt="Appointment Management"/>
 </p>
-
-- **Centralized Appointment Control** - Confirm, reschedule, or cancel appointments
-- **Real-time Statistics** - Track scheduled, pending, and cancelled appointments
-- **Patient Management** - Access complete patient records and history
-- **Automated SMS Notifications** - Twilio integration for appointment confirmations
 
 <p align="center">
     <img width="49%" src="./assets/passkey.png" alt="Secure Admin Access"/>
