@@ -159,7 +159,6 @@ While the current version is fully functional, here are planned improvements:
 - **Email Verification** - Easy to implement with Appwrite's built-in email service
 - **Multi-language Support** - Internationalization for broader accessibility
 - **Payment Integration** - Stripe/PayPal for appointment deposits
-- **Appointment Reminders** - Automated SMS/email reminders 24 hours before appointments
 - **Export Reports** - PDF generation for patient records
 
 ---
