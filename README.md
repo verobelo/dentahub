@@ -60,15 +60,15 @@ Click the **"Demo Patient"** button on the homepage to instantly access a pre-co
 &nbsp;
     <img width="49%" src="./assets/registration.png" alt="Digital Registration"/>
 </p>
+<p align="center">
+    <img width="49%" src="./assets/appointments.png" alt="Appointment Management"/>
+   <img width="49%" src="./assets/patients.png" alt="Patients"/>
+</p>
 
 ### 🏥 Admin Dashboard
 <p align="center">
     <img width="49%" src="./assets/admin-dash.png" alt="Admin Dashboard"/>
 &nbsp;
-    <img width="49%" src="./assets/appointments.png" alt="Appointment Management"/>
-</p>
-
-<p align="center">
     <img width="49%" src="./assets/passkey.png" alt="Secure Admin Access"/>
 &nbsp;
     <img width="49%" src="./assets/sms.png" alt="SMS Notifications"/>
