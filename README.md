@@ -3,7 +3,7 @@
   <h1>AI-Powered Dental Appointment & Patient Registration Platform</h1>  
   </div>
 
-> **A full-stack dental platform featuring AI-assisted patient support, smart appointment scheduling and administration.**
+### **A full-stack dental platform featuring AI-assisted patient support, smart appointment scheduling and administration.**
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Next.js](https://img.shields.io/badge/Next.js_15-black?logo=next.js&logoColor=white)](https://nextjs.org/)
