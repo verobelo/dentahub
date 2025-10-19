@@ -13,7 +13,24 @@ const nunito = Nunito_Sans({
 export const metadata: Metadata = {
   title: 'DentaHub',
   description:
-    'Simplify dental care management with DentaHub. Patients easily schedule appointments and view treatment history. Dental professionals manage patient schedules, track procedures, and streamline practice operations all in one platform.',
+    'Simplify dental care management with DentaHub. Patients easily schedule appointments and dental professionals manage patient schedules all in one platform.',
+  openGraph: {
+    title: 'DentaHub',
+    description:
+      'Simplify dental care management with DentaHub. Patients easily schedule appointments and dental professionals manage patient schedules all in one platform.',
+    url: 'https://dentahub.vercel.app/',
+    siteName: 'DentaHub',
+    images: [
+      {
+        url: 'https://dentahub.vercel.app/dentahub-preview.png',
+        width: 1200,
+        height: 630,
+        alt: 'Dentahub',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
 };
 
 export default function RootLayout({
