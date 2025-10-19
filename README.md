@@ -1,27 +1,17 @@
 <div align="center">
-  <img src="./assets/dentahub.png" alt="DentaHub Logo" height="120">
-  <h1>DentaHub</h1>
-  <p>Modern Dental Appointment & Patient Management System</p>
-  
-  <a href="https://www.loom.com/share/d71b9d8645634cbfbff0b90f7dd5262c?sid=4492fec9-58e7-43d8-9b0a-12834469dce5">
-    <img src="https://img.shields.io/badge/📹_Watch_Demo-Click_Here-blue?style=for-the-badge" alt="Watch Demo">
-  </a>
-</div>
+  <img src="./assets/dentahub.png" alt="DentaHub Logo" width="100%">
+  <h1>AI-Powered Dental Appointment & Patient Registration Platform</h1>  
+  </div>
 
-> **A full-stack responsive dental platform that digitizes patient registration, appointment scheduling and administration.**
+> **A full-stack dental platform featuring AI-assisted patient support, smart appointment scheduling and administration.**
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Next.js](https://img.shields.io/badge/Next.js_15-black?logo=next.js&logoColor=white)](https://nextjs.org/)
+[![OpenAI](https://img.shields.io/badge/OpenAI-412991?logo=openai&logoColor=white)](https://openai.com/)
 [![Appwrite](https://img.shields.io/badge/Appwrite-F02E65?logo=appwrite&logoColor=white)](https://appwrite.io/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![shadcn/ui](https://img.shields.io/badge/shadcn/ui-000000?logo=shadcnui&logoColor=white)](https://ui.shadcn.com/)
 [![Vercel](https://img.shields.io/badge/Vercel-000000?logo=vercel&logoColor=white)](https://vercel.com/)
-[![OpenAI](https://img.shields.io/badge/OpenAI-412991?logo=openai&logoColor=white)](https://openai.com/)
-
-
-
-
-
 
 ---
 
@@ -32,6 +22,7 @@
 - [The Problem](#-the-problem)
 - [The Solution](#-the-solution)
 - [Tech Stack](#-tech-stack)
+- [AI Implementation](#-ai-implementation)
 - [Future Enhancements](#-future-enhancements)
 - [Important Notes](#-important-notes)
 
@@ -40,6 +31,10 @@
 
 ## 🎭 Demo Access
 
+<a href="https://www.loom.com/share/d71b9d8645634cbfbff0b90f7dd5262c?sid=4492fec9-58e7-43d8-9b0a-12834469dce5">
+    <img src="https://img.shields.io/badge/📹_Watch_2min_Demo-Click_Here-blue?style=for-the-badge" alt="Watch Demo">
+</a>
+  
 **Live Demo:** [dentahub.vercel.app](https://dentahub.vercel.app)
 
 ### Patient Dashboard
@@ -52,37 +47,32 @@ Click the **"Demo Patient"** button on the homepage to instantly access a pre-co
 4. SMS notification is fully set up but not available in Demo mode (see Key Features for screenshots)
    
 ---
-
-<details open>
-<summary>
-✨ Key Features
-</summary> <br />
+### 🤖 AI-Powered Patient Support
+**Intelligent Dental Chatbot** - Patients can ask common dental questions and receive instant, accurate responses powered by OpenAI's GPT models. 
 
 <p align="center">
-    <img width="49%" src="./assets/authentication.png" alt="authentication"/>
-&nbsp;
-    <img width="49%" src="./assets/registration.png" alt="registration"/>
+    <img width="70%" src="./assets/ai.png" alt="AI Dental Assistant"/>
 </p>
 
+### 📱 Patient Experience
 <p align="center">
-    <img width="49%" src="./assets/patients.png" alt="patients"/>
+    <img width="49%" src="./assets/authentication.png" alt="Secure Authentication"/>
 &nbsp;
-    <img width="49%" src="./assets/appointments.png" alt="appointments"/>
-</p> 
-    
+    <img width="49%" src="./assets/registration.png" alt="Digital Registration"/>
+</p>
 <p align="center">
-    <img width="49%" src="./assets/passkey.png" alt="passkey"/>
-&nbsp;
-    <img width="49%" src="./assets/admin-dash.png" alt="admin dashboard"/>
+    <img width="49%" src="./assets/appointments.png" alt="Appointment Management"/>
+   <img width="49%" src="./assets/patients.png" alt="Patients"/>
 </p>
 
+### 🏥 Admin Dashboard
 <p align="center">
-    <img width="49%" src="./assets/ai.png" alt="ai"/>
+    <img width="49%" src="./assets/admin-dash.png" alt="Admin Dashboard"/>
 &nbsp;
-    <img width="49%" src="./assets/sms.png" alt="sms"/>
+    <img width="49%" src="./assets/passkey.png" alt="Secure Admin Access"/>
+&nbsp;
+    <img width="49%" src="./assets/sms.png" alt="SMS Notifications"/>
 </p>
-
-</details>
 
 ---
 
@@ -107,15 +97,15 @@ These pain points inspired me to create a digital solution that improves the exp
 
 ## ✅ The Solution
 
-**DentaHub** is a modern web application that streamlines the entire patient journey - from registration to appointment management. 
+**DentaHub** is a modern, AI-enhanced web application that streamlines the entire patient journey - from registration to appointment management. 
 
-Patients can:
+**Patients can:**
 - Complete registration forms at their own pace from any device
+- Get instant answers to common dental questions via AI chatbot
 - View and manage their appointments in real-time
 - Update personal information without clinic visits
-- Get instant answers to common dental questions via AI chatbot
 
-Meanwhile, clinic administrators can:
+**Meanwhile, clinic administrators can:**
 - Manage all appointments from a centralized dashboard
 - Confirm or cancel appointments with automated SMS notifications
 - Track appointment statistics (scheduled, pending, cancelled)
@@ -125,28 +115,41 @@ Meanwhile, clinic administrators can:
 ## 🛠 Tech Stack
 
 ### Frontend
-- **Next.js 15** 
-- **TypeScript**
-- **Tailwind CSS**
-- **shadcn/ui**
-- **react-hook-form**
-- **Zod**
-- 
+- **Next.js 15** - React framework with App Router
+- **TypeScript** - Type-safe development
+- **Tailwind CSS** - Utility-first styling
+- **shadcn/ui** - Accessible component library
+- **react-hook-form** + **Zod** - Form validation
+  
 ### Backend & Services
 - **Appwrite**
-  - Authentication
+  - Authentication (Phone-based OTP)
   - Database (NoSQL)
-  - Storage (file uploads)
+  - Storage (Secure file uploads)
   - Real-time updates
-- **OpenAI API** - AI chatbot integration
-- **Twilio** - SMS notifications
+- **OpenAI API** - GPT-powered chatbot with custom safety prompts
+- **Twilio** - SMS notification system
 
 ### Key Libraries
-- **react-datepicker**
-- **react-phone-number-input**
-- **react-markdown**
-- **react-hot-toast**
-- **lucide-react**
+- **react-datepicker** - Appointment scheduling
+- **react-phone-number-input** - International phone formatting
+- **react-markdown** - AI response rendering
+- **react-hot-toast** - User notifications
+- **lucide-react** - Icon system
+---
+
+## 🤖 AI Implementation
+
+### Responsible AI Design
+
+The dental chatbot leverages OpenAI's API with carefully created system prompts to ensure:
+
+✅ **Safety-First Approach** - Explicitly programmed to never provide medical diagnoses or treatment advice  
+✅ **Appropriate Boundaries** - Directs patients to schedule appointments for any medical concerns  
+✅ **General Information Only** - Answers common questions about dental hygiene, procedures and appointment preparations
+✅ **Liability Protection** - Clear disclaimers that responses are informational, not medical advice
+
+Drawing on my 10 years in customer service, I set up the AI to handle the types of repetitive questions that consume staff time while maintaining professional boundaries appropriate for healthcare settings.
 
 ---
 ## 🔮 Future Enhancements
@@ -156,7 +159,6 @@ While the current version is fully functional, here are planned improvements:
 - **Email Verification** - Easy to implement with Appwrite's built-in email service
 - **Multi-language Support** - Internationalization for broader accessibility
 - **Payment Integration** - Stripe/PayPal for appointment deposits
-- **Appointment Reminders** - Automated SMS/email reminders 24 hours before appointments
 - **Export Reports** - PDF generation for patient records
 
 ---
@@ -176,6 +178,9 @@ This application demonstrates technical capabilities but is not GDPR-compliant i
 - Patient consent management and data retention policies
 
 While Appwrite offers compliance features, each EU member state may have additional healthcare data regulations that must be addressed.
+
+**AI Disclaimer**  
+The AI chatbot is for informational purposes only and explicitly programmed to avoid providing medical advice. All medical concerns are directed to professional consultation.
 
 **Data Security**
 - All sensitive data is encrypted by Appwrite
