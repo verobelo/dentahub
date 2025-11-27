@@ -10,7 +10,7 @@ import { useRouter } from 'next/navigation';
 import { account } from '@/lib/appwrite-client';
 import { Appointment } from '@/types/appwrite.types';
 import { Models } from 'appwrite';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, lazy, Suspense } from 'react';
 
 import {
   Accordion,
@@ -19,7 +19,7 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 
-import DentalChatBot from '@/components/DentalChatBot';
+const DentalChatBot = lazy(() => import('@/components/DentalChatBot'));
 import PersonalInformation from '@/components/PersonalInformation';
 import { Button } from '@/components/ui/button';
 import LogoutButton from '@/components/LogoutButton';
@@ -117,7 +117,9 @@ export default function Dashboard() {
               <span className='text-green-primary'>Dental Assistant</span>
             </h2>
             <div className='mt-12'>
-              <DentalChatBot />
+              <Suspense fallback={<div className='text-dark-700'>Loading chatbot...</div>}>
+                <DentalChatBot />
+              </Suspense>
             </div>
           </div>
         </Accordion>
