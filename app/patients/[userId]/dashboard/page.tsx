@@ -1,5 +1,4 @@
 'use client';
-import { DataTable } from '@/components/table/DataTable';
 import { patientColumns } from '@/components/table/patientColumns';
 import { getRecentAppointmentsList } from '@/lib/actions/appointment.actions';
 import Image from 'next/image';
@@ -20,6 +19,7 @@ import {
 } from '@/components/ui/accordion';
 
 const DentalChatBot = lazy(() => import('@/components/DentalChatBot'));
+const DataTable = lazy(() => import('@/components/table/DataTable').then(mod => ({ default: mod.DataTable }))) as unknown as typeof import('@/components/table/DataTable').DataTable;
 import PersonalInformation from '@/components/PersonalInformation';
 import { Button } from '@/components/ui/button';
 import LogoutButton from '@/components/LogoutButton';
@@ -76,12 +76,14 @@ export default function Dashboard() {
             <AccordionTrigger>View Appointments</AccordionTrigger>
             <AccordionContent>
               <div className='my-10'>
-                <DataTable
-                  data={appointments.filter(
-                    (appointment) => appointment.patient.userId === user?.$id
-                  )}
-                  columns={patientColumns}
-                />
+                <Suspense fallback={<div className='text-dark-700'>Loading appointments...</div>}>
+                  <DataTable
+                    data={appointments.filter(
+                      (appointment) => appointment.patient.userId === user?.$id
+                    )}
+                    columns={patientColumns}
+                  />
+                </Suspense>
               </div>
               <Button
                 asChild
